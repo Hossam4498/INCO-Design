@@ -1,0 +1,91 @@
+/* ================================================================================= */
+/* ================================== Media Query ================================== */
+/* ================================================================================= */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .fa-bars {
+        display: block;
+    }
+
+    .header nav {
+        position: fixed;
+        top: 6.5rem;
+        right: -120%;
+        height: calc(100vh - 6rem);
+        width: 100vw;
+        z-index: 100;
+    }
+
+    .header .nav-toggle {
+        right: 0;
+    }
+
+    .header nav ul {
+        height: 100%;
+        width: 33rem;
+        flex-flow: column;
+        justify-content: center;
+        float: right;
+
+        background: var(--dark-brown-color);
+        box-shadow: var(--dark-shadow-box) inset;
+    }
+
+    .header nav ul li {
+        margin: 1rem 0;
+    }
+
+    .header nav ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        width: 25rem;
+        text-align: center;
+        border-radius: 5rem;
+        border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    }
+
+    .header nav ul li a:hover {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+    }
+
+
+
+    .home .hero .text1 {
+        font-size: 4rem;
+    }
+
+    .home .hero .text2 {
+        font-size: 2rem;
+    }
+
+    .home .counting .box .count {
+        font-size: 3rem;
+    }
+
+
+    .about .info {
+        text-align: center;
+        padding: 5rem;
+    }
+
+    .about .image img {
+        height: 60rem;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: 0rem 0rem 1rem 1rem var(--dark-brown-color);
+    }
+
+
+    .service .box-container .box {
+        margin: 1rem;
+    }
+
+    .project .box-container .box {
+        margin: 1rem;
+    }
+}
